@@ -1,0 +1,45 @@
+.ProductImage{ /* it takes 50% of a screen*/
+    width: 100%;
+    position: relative;
+  }
+  .ProductImage >img{ /* inside product image image should be 100%*/
+    width: 100%;
+  }
+  .Time{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .Heart{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+  }
+   .Heart >p {
+    margin-top: 4px;
+   }
+   .Heart > i{
+    color: red;
+    animation: beat 1s infinite;
+   }
+   @keyframes beat{
+    0%{
+        transform: scale(1,1);
+    }
+
+    50%{
+        transform: scale(1.2,1.2);
+    }
+
+    100%{
+        transform: scale(1,1);
+    }
+   }
